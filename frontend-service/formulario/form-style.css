@@ -1,0 +1,122 @@
+/*
+seletor_de_elemento {
+    //bloco de declarações
+    propriedade css: valor;
+}
+*/
+
+/* Centraliza o conteúdo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #2a475e; */
+    /* background: linear-gradient(to top left, #1b2d41, #2a475e); */
+    color: white;
+    background-image: url('background.webp'); /* Caminho para sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    backdrop-filter: blur(4px); /* Aplica o desfoque ao fundo */
+}
+
+/* Estiliza o container principal */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color:  #1d2e4c;
+}
+
+/* Estiliza os elementos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label, select, input, button {
+    width: 100%;
+    font-size: 20px;
+}
+
+.label-input, button {
+    margin-top: 30px;
+}
+
+input, select {
+    background-color: #316282;
+    border-color: #316282;
+    color: white;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.radio-input {
+    display: flex;
+    text-align: left;
+    gap: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Estiliza o botão de submissão */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #415960, #8ca0a6, #415960);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, white, #9c9e9f);
+    color: black;
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estiliza a mensagem abaixo do formulário */
+#message {
+    margin-top: 20px;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 96%;
+}
+
+a.button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: lightgray;
+    color: black;
+}

@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#grafico {
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color:  #abc0e3;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(to right, #415960, #8ca0a6, #415960);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+a.button:hover {
+    background: linear-gradient(to right, white, #9c9e9f);
+    color: black;
+}
+
+a.button:active {
+    background-color: #004085; /* Cor de fundo ao clicar */
+    border-color: #004085; /* Altera a cor da borda ao clicar */
+}
+
+a.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(38, 143, 255, 0.5); /* Destaca o botão quando ele está focado */
+}

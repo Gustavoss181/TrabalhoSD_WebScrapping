@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificador de Preços de Jogos da Steam</title>
+    <link type="text/css" rel="stylesheet" href="form-style.css">
+    <script src="form-script.js" defer></script>
+</head>
+<body>
+    <!-- <tag_de_abertura atr="atributo da tag"> conteúdo da tag </tag_de_fechamento> -->
+    <div class="container">
+        <h1>Notificador de Preços de Jogos da Steam</h1>
+        <form id="precoForm">
+            <div class="label-input">
+                <label for="seletorJogo">Escolha um dos jogos:</label>
+                <select id="seletorJogo" name="seletorJogo" required>
+                    <option value="" elected hidden>--Escolha um jogo--</option>
+                </select>
+            </div>
+            <div class="label-input">
+                <label for="precoInput">Preço desejado (R$):</label>
+                <input type="number" id="precoInput" name="precoInput" min="0" step="0.5" required>
+            </div>
+
+            <div class="label-input">
+                <label for="">Escolha uma forma de Notificação:</label>
+                <div class="radio-input">
+                    <input type="radio" name="notification" id="sms" onclick="showField('sms')" required>
+                    <label for="sms">SMS</label>
+            
+                    <input type="radio" name="notification" id="email" onclick="showField('email')" required>
+                    <label for="email">Email</label>
+            
+                    <input type="radio" name="notification" id="telegram" onclick="showField('telegram')" required>
+                    <label for="telegram">Telegram</label>
+                </div>
+            </div>
+
+            <div id="smsField" class="hidden label-input">
+                <label for="smsInput">Número de Telefone:</label>
+                <input type="text" id="smsInput" name="smsInput">
+            </div>
+        
+            <div id="emailField" class="hidden label-input">
+                <label for="emailInput">Endereço de Email:</label>
+                <input type="email" id="emailInput" name="emailInput">
+            </div>
+        
+            <div id="telegramField" class="hidden label-input">
+                <label for="telegramInput">Nome de Usuário do Telegram:</label>
+                <input type="text" id="telegramInput" name="telegramInput">
+            </div>
+        
+
+            <button type="submit">Definir Notificação</button>
+        </form>
+        <p id="message"></p>
+        <a class="button" href="/">Voltar ao gráfico</a>
+    </div>
+
+    <img src="steam_logo.png" alt="Logo da Steam" class="logo">
+</body>
+</html>
